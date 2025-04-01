@@ -23,7 +23,7 @@ const doc: OpenAPIV3.Document = {
         required: [
           "title",
           "description",
-          "status"s
+          "status"
         ],
         properties: {
           title: {
