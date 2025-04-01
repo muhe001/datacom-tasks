@@ -20,28 +20,39 @@ const doc: OpenAPIV3.Document = {
       },
       Task: {
         type: "object",
-        // required: [
-        //   "title",
-        //   "description",
-        //   "status"s
-        // ],
+        required: [
+          "title",
+          "description",
+          "status"s
+        ],
         properties: {
-          // title: {
-          //   type: "string",
-          //   description: "Title of the task"
-          // },
-          // description: {
-          //   type: "string",
-          //   description: "Description of the task"
-          // },
-          // status: {
-          //   type: "string",
-          //   enum: [
-          //     "ToDo",
-          //     "InProgress",
-          //     "Completed"
-          //   ],
-          //   description: "Current status of the task"
+          title: {
+            type: "string",
+            description: "Title of the task"
+          },
+          description: {
+            type: "string",
+            description: "Description of the task"
+          },
+          status: {
+            type: "string",
+            enum: [
+              "ToDo",
+              "InProgress",
+              "Completed"
+            ],
+            description: "Current status of the task"
+          },
+          dueDate: {
+            type: "string",
+            format: "date-time",
+            description: "Due date of the task"
+          },
+          image: {
+            type: "string",
+            format: "date-time",
+            description: "image associated with the task"
+          }
         }
       },
       TaskResource: {
