@@ -1,0 +1,50 @@
+{
+  "name": "@repo/ui",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start-ui:dev": "ENVIRONMENT=development pnpm run copy-dotenv-dev && next dev -p 3001",
+    "copy-dotenv-dev": "cp ./.env/.env.$ENVIRONMENT ./.env.development ; cp ./.env/.env.$ENVIRONMENT.local ./.env.development.local ; :",
+    "copy-dotenv-build": "cp ./.env/.env.$ENVIRONMENT ./.env.development ; cp ./.env/.env.$ENVIRONMENT.local ./.env.development.local ; :",
+    "start-ui-local-api:dev": "NEXT_PUBLIC_ApiEndpoint=http://localhost:4911 pnpm run start-ui:dev",
+    "build-only:dev": "ENVIRONMENT=development pnpm run copy-dotenv-build && next build",
+    "build:development": "ENVIRONMENT=development pnpm run copy-dotenv-build && next build",
+    "start": "next start",
+    "format": "prettier-eslint --write $PWD/'**/*.[jt]s?(x)' --ignore '**/.next/**' && eslint --fix .",
+    "lint": "eslint . --ext=.ts,.tsx",
+    "test": "jest",
+    "open-ui:dev": "dotenv -e .env/.env.development pnpm run open-ui-subcommand",
+    "open-ui-subcommand": "open $AMPLIFY_URL/"
+  },
+  "jest": {
+    "preset": "@repo/jest-presets/node"
+  },
+  "dependencies": {
+    "@ant-design/cssinjs": "^1.5.6",
+    "@ant-design/icons": "^5.1.4",
+    "@repo/common": "workspace:*",
+    "@tanstack/react-query": "^4.29.19",
+    "antd": "^5.9.0",
+    "aws-amplify": "^6.0.13",
+    "aws-amplify-react": "^4.1.22",
+    "axios": "^1.6.7",
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.3.1",
+    "lodash.debounce": "^4.0.8",
+    "next": "^15.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "styled-jsx": "^5.1.2"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^15.2.1",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "dotenv-cli": "^7.3.0",
+    "jest": "^29.4.3"
+  }
+}
