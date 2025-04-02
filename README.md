@@ -1,40 +1,18 @@
-# Turborepo kitchen sink starter
+# Tasks
+## Pre-requisites
+- [AWS Account + CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html)
+- Node.js
+- pnpm
+- truborepo installed
 
-This Turborepo starter is maintained by the Turborepo core team.
+## Getting started
 
-This example also shows how to use [Workspace Configurations](https://turbo.build/repo/docs/core-concepts/monorepos/configuring-workspaces).
+1. Run `turbo build` 
+2. Run `pnpm run init:dev`to deploy a dev instance to your AWS account
+Run `pnpm run init:dev` . This command does the following:
 
-## Using this example
+This will create a new entry in `~/.aws/credentials` called `datacom-test` using credentials copied from the `default` profile. It then bootstraps CDK in the AWS account, deploys to AWS, then copies CloudFormation/CDK outputs to local `.env` files
 
-Run the following command:
-
-```sh
-npx create-turbo@latest -e kitchen-sink
-```
-
-## What's inside?
-
-This Turborepo includes the following packages and apps:
-
-### Apps and Packages
-
-- `api`: an [Express](https://expressjs.com/) server
-- `storefront`: a [Next.js](https://nextjs.org/) app
-- `admin`: a [Vite](https://vitejs.dev/) single page app
-- `blog`: a [Remix](https://remix.run/) blog
-- `@repo/eslint-config`: ESLint configurations used throughout the monorepo
-- `@repo/jest-presets`: Jest configurations
-- `@repo/logger`: isomorphic logger (a small wrapper around console.log)
-- `@repo/ui`: a dummy React UI library (which contains `<CounterButton>` and `<Link>` components)
-- `@repo/typescript-config`: tsconfig.json's used throughout the monorepo
-
-Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Jest](https://jestjs.io) test runner for all things JavaScript
-- [Prettier](https://prettier.io) for code formatting
+## Demo
+*Live Example:* https://development.d1u3347j7c5r17.amplifyapp.com/
+- Use existing user, or register new - email verification is turned off, so fake email can be used
