@@ -16,3 +16,5 @@ This will create a new entry in `~/.aws/credentials` called `datacom-test` using
 ## Demo
 *Live Example:* https://development.d1u3347j7c5r17.amplifyapp.com/
 - Use existing user, or register new - email verification is turned off, so fake email can be used
+
+*OpenAPI Docs:* https://lgblb7xaeb.execute-api.ap-southeast-2.amazonaws.com/api-docs
