@@ -1,6 +1,7 @@
 // import { debug } from '@repo/common'
 import { OperationFunction } from "express-openapi"
 import { listTaskItems, createTaskItem } from "../controllers"
+import { debug } from '@repo/common'
 
 const get: OperationFunction = async function get(req, res) {
   const lastEvaluatedKey = req.query['lastEvaluatedKey']
@@ -43,7 +44,8 @@ get.apiDoc = {
 };
 
 const post: OperationFunction = async function post(req, res) {
-  const { taskItem } = req.body
+  debug('api.controller.taskItem.create', { body: req.body })
+  const taskItem = req.body
   const createdTaskItem = await createTaskItem({
     userId: req.cognitoUser.userId as string,
     taskItem,

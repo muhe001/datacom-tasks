@@ -11,7 +11,7 @@ import { idTokenVerifier } from './utils/cognito'
 import { RecordNotFoundException } from './exceptions/RecordNotFoundException'
 import { UnauthenticatedException } from './exceptions/UnauthenticatedException'
 import { UnauthorizedException } from './exceptions/UnauthorizedException'
-import { exceptions }  from '@repo/common'
+import { exceptions, debug }  from '@repo/common'
 import openapi from "express-openapi";
 import { json as jsonParser, urlencoded } from "body-parser";
 import apiDoc from "./api-doc.ts";
@@ -32,6 +32,7 @@ app.use(
 app.use(json())
 app.use(async (req, res, next) => {
   // dont req auth for docs
+  debug('api.auth', { path: req.path })
   if (req.path === '/api-docs') return next()
 
   const { event = {} } = getCurrentInvoke()
@@ -97,15 +98,6 @@ async function createServer(): Promise<Express> {
     },
 
   });
-
-  app.use(
-    cors({
-      maxAge: 86400,
-      origin: function (origin, callback) {
-        callback(null, true) // TODO: lock this down to locahost (dev) & whitelist public urls
-      }
-    })
-  );
 
   app.use((req, res, next) => {
     // ts-ignore

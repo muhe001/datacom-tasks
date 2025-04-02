@@ -1,43 +1,43 @@
 {
-  "Tasks-development-Api": {
-    "ExportsOutputRefExpressApiLambdaFunctionLambdaFunctionFunctionE7A091BBFE1487C1": "Tasks-development-Api-ExpressApiLambdaFunctionLamb-8mdUgJTpSyqj",
-    "ExportsOutputRefExpressApiHttpApiA49C63655567EF4B": "4juo91ubic",
-    "Region": "ap-southeast-2",
-    "ApiEndpoint": "https://4juo91ubic.execute-api.ap-southeast-2.amazonaws.com",
-    "ExportsOutputRefExpressApiLambdaFunctionLambdaFunctionLogGroup0A46D4BB990477F0": "Tasks-development-Api-ExpressApiLambdaFunctionLambdaFunctionLogGroup0A46D4BB-AtIfDN7lsvUb"
+  "Tasks-development-Monitoring": {
+    "Region": "ap-southeast-2"
   },
   "Tasks-development-WebApp": {
     "Region": "ap-southeast-2",
-    "AmplifyUrl": "https://development.d1n7tok092l560.amplifyapp.com",
-    "ExportsOutputFnGetAttWebAppAmplifyApp42AA4FC9DefaultDomain198C554E": "d1n7tok092l560.amplifyapp.com",
-    "ExportsOutputFnGetAttWebAppAmplifyApp42AA4FC9AppId0CA26BD3": "d1n7tok092l560"
-  },
-  "Tasks-development-Database": {
-    "ExportsOutputFnGetAttTaskItemTableDD56F5FFArnEF1D6B02": "arn:aws:dynamodb:ap-southeast-2:058264472392:table/Tasks-development-Database-TaskItemTableDD56F5FF-1DDA55TKNJFG6",
-    "UserTable": "Tasks-development-Database-UserTable7422B51B-1EAJ2SZ8H7KRX",
-    "ExportsOutputRefUserTable7422B51B54C5D340": "Tasks-development-Database-UserTable7422B51B-1EAJ2SZ8H7KRX",
-    "Region": "ap-southeast-2",
-    "ExportsOutputFnGetAttUserTable7422B51BArn264A2F84": "arn:aws:dynamodb:ap-southeast-2:058264472392:table/Tasks-development-Database-UserTable7422B51B-1EAJ2SZ8H7KRX",
-    "TaskItemTable": "Tasks-development-Database-TaskItemTableDD56F5FF-1DDA55TKNJFG6",
-    "ExportsOutputRefTaskItemTableDD56F5FF2B593FFF": "Tasks-development-Database-TaskItemTableDD56F5FF-1DDA55TKNJFG6"
+    "AmplifyUrl": "https://development.d1u3347j7c5r17.amplifyapp.com",
+    "ExportsOutputFnGetAttWebAppAmplifyApp42AA4FC9DefaultDomain198C554E": "d1u3347j7c5r17.amplifyapp.com",
+    "ExportsOutputFnGetAttWebAppAmplifyApp42AA4FC9AppId0CA26BD3": "d1u3347j7c5r17"
   },
   "Tasks-development-Auth": {
-    "ExportsOutputRefAuthUserPoolUserPoolClientBB863FCCB5DBFB7B": "710pugfgpe6c349rb6dmtab48e",
-    "ExportsOutputRefAuthPreTokenGenerationFunctionPreTokenGenerationFunctionFunctionFED5BC2DD73E1D85": "Tasks-development-Auth-AuthPreTokenGenerationFunct-jrAGRiCdr7cB",
-    "ExportsOutputRefAuthPreSignupFunctionPreSignupFunctionLogGroup252FE48E34FD04C6": "Tasks-development-Auth-AuthPreSignupFunctionPreSignupFunctionLogGroup252FE48E-b1Me7F2qo4dk",
-    "ExportsOutputRefAuthPreTokenGenerationFunctionPreTokenGenerationFunctionLogGroupBFCF770F61B3EEA2": "Tasks-development-Auth-AuthPreTokenGenerationFunctionPreTokenGenerationFunctionLogGroupBFCF770F-AqFRePHf5igP",
-    "UserPoolEntityId": "urn:amazon:cognito:sp:ap-southeast-2_jseRxnvpJ",
-    "ExportsOutputRefAuthPreSignupFunctionPreSignupFunctionFunction27695C82EFD7166D": "Tasks-development-Auth-AuthPreSignupFunctionPreSig-uBVg0GfvnNeo",
-    "ExportsOutputRefAuthCustomMessageFunctionCustomMessageFunctionFunction635EAB4E31D5154C": "Tasks-development-Auth-AuthCustomMessageFunctionCu-g77XIMLToTT2",
-    "ExportsOutputRefAuthUserPool8115E87F4F9C6D4C": "ap-southeast-2_jseRxnvpJ",
-    "UserPoolClientId": "710pugfgpe6c349rb6dmtab48e",
-    "UserPoolId": "ap-southeast-2_jseRxnvpJ",
+    "ExportsOutputRefAuthUserPoolUserPoolClientBB863FCCB5DBFB7B": "407mg3b8591oip6eeh422j8hjb",
+    "ExportsOutputRefAuthPreTokenGenerationFunctionPreTokenGenerationFunctionFunctionFED5BC2DD73E1D85": "Tasks-development-Auth-AuthPreTokenGenerationFunct-s1m83KC1N8IJ",
+    "ExportsOutputRefAuthPreSignupFunctionPreSignupFunctionLogGroup252FE48E34FD04C6": "Tasks-development-Auth-AuthPreSignupFunctionPreSignupFunctionLogGroup252FE48E-NYJqFmZev0JB",
+    "ExportsOutputRefAuthPreTokenGenerationFunctionPreTokenGenerationFunctionLogGroupBFCF770F61B3EEA2": "Tasks-development-Auth-AuthPreTokenGenerationFunctionPreTokenGenerationFunctionLogGroupBFCF770F-AvKW5L5HxfM0",
+    "UserPoolEntityId": "urn:amazon:cognito:sp:ap-southeast-2_bDoDX9nvQ",
+    "ExportsOutputRefAuthPreSignupFunctionPreSignupFunctionFunction27695C82EFD7166D": "Tasks-development-Auth-AuthPreSignupFunctionPreSig-fWl7q3PRDNdI",
+    "ExportsOutputRefAuthCustomMessageFunctionCustomMessageFunctionFunction635EAB4E31D5154C": "Tasks-development-Auth-AuthCustomMessageFunctionCu-zHqZ5Dls3OQK",
+    "ExportsOutputRefAuthUserPool8115E87F4F9C6D4C": "ap-southeast-2_bDoDX9nvQ",
+    "UserPoolClientId": "407mg3b8591oip6eeh422j8hjb",
+    "UserPoolId": "ap-southeast-2_bDoDX9nvQ",
     "UserPoolAuthUrl": "tasks-development.auth.ap-southeast-2.amazoncognito.com",
-    "ExportsOutputRefAuthCustomMessageFunctionCustomMessageFunctionLogGroup557B06B9DA197D85": "Tasks-development-Auth-AuthCustomMessageFunctionCustomMessageFunctionLogGroup557B06B9-Pm5aKCdEqHG2",
+    "ExportsOutputRefAuthCustomMessageFunctionCustomMessageFunctionLogGroup557B06B9DA197D85": "Tasks-development-Auth-AuthCustomMessageFunctionCustomMessageFunctionLogGroup557B06B9-GB2UlDzSDiKo",
     "UserPoolRedirectUrlACS": "https://tasks-development.auth.ap-southeast-2.amazoncognito.com/saml2/idpresponse",
     "Region": "ap-southeast-2"
   },
-  "Tasks-development-Monitoring": {
-    "Region": "ap-southeast-2"
+  "Tasks-development-Api": {
+    "ExportsOutputRefExpressApiLambdaFunctionLambdaFunctionFunctionE7A091BBFE1487C1": "Tasks-development-Api-ExpressApiLambdaFunctionLamb-gVsb5m5WoJVE",
+    "ExportsOutputRefExpressApiHttpApiA49C63655567EF4B": "lgblb7xaeb",
+    "Region": "ap-southeast-2",
+    "ApiEndpoint": "https://lgblb7xaeb.execute-api.ap-southeast-2.amazonaws.com",
+    "ExportsOutputRefExpressApiLambdaFunctionLambdaFunctionLogGroup0A46D4BB990477F0": "Tasks-development-Api-ExpressApiLambdaFunctionLambdaFunctionLogGroup0A46D4BB-SeEz8lX5Ed6c"
+  },
+  "Tasks-development-Database": {
+    "ExportsOutputFnGetAttTaskItemTableDD56F5FFArnEF1D6B02": "arn:aws:dynamodb:ap-southeast-2:058264472392:table/Tasks-development-Database-TaskItemTableDD56F5FF-12GI7OPWPUVAK",
+    "UserTable": "Tasks-development-Database-UserTable7422B51B-7RXGRZQG6D2H",
+    "ExportsOutputRefUserTable7422B51B54C5D340": "Tasks-development-Database-UserTable7422B51B-7RXGRZQG6D2H",
+    "Region": "ap-southeast-2",
+    "ExportsOutputFnGetAttUserTable7422B51BArn264A2F84": "arn:aws:dynamodb:ap-southeast-2:058264472392:table/Tasks-development-Database-UserTable7422B51B-7RXGRZQG6D2H",
+    "TaskItemTable": "Tasks-development-Database-TaskItemTableDD56F5FF-12GI7OPWPUVAK",
+    "ExportsOutputRefTaskItemTableDD56F5FF2B593FFF": "Tasks-development-Database-TaskItemTableDD56F5FF-12GI7OPWPUVAK"
   }
 }

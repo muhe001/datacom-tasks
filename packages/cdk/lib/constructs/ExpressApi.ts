@@ -107,6 +107,11 @@ export default class ExpressApi extends Construct {
         : undefined,
     })
     api.addRoutes({
+      path: '/api-docs',
+      integration,
+      methods: [HttpMethod.ANY],
+    })
+    api.addRoutes({
       path: '/{proxy+}',
       integration,
       authorizer,

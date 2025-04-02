@@ -48,7 +48,7 @@ get.apiDoc = {
 
 const put: OperationFunction = async function get(req, res) {
   const itemId = req.params.id
-    const { taskItem } = req.body
+    const taskItem  = req.body
     const taskItemItem = await updateTaskItem({
       taskItem,
       userId: req.cognitoUser.userId,

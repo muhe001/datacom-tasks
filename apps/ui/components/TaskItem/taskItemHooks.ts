@@ -20,8 +20,8 @@ const api = {
     })
   },
   getTaskItem: ({ itemId }) => axios.get(`/tasks/${itemId}`),
-  createTaskItem: ({ data }) => axios.post(`/tasks`, { taskItem: data }),
-  updateTaskItem: ({ itemId, data }) => axios.put(`/tasks/${itemId}`, { taskItem: data }),
+  createTaskItem: ({ data }) => axios.post(`/tasks`, { ...data }),
+  updateTaskItem: ({ itemId, data }) => axios.put(`/tasks/${itemId}`, { ...data }),
   deleteTaskItem: ({ itemId }) => axios.delete(`/tasks/${itemId}`),
 }
 

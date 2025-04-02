@@ -10,3 +10,10 @@ dist-ssr
 .cache
 server/dist
 public/dist
+
+.env.local
+.env.*.local
+
+.cache
+coverage
+.webpack
